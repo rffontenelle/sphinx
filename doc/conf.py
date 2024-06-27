@@ -3,9 +3,13 @@ from __future__ import annotations
 
 import os
 import re
+import sys
 import time
 
 import sphinx
+
+
+sys.path.append(os.path.abspath('_themes/sphinx13'))
 
 os.environ['SPHINX_AUTODOC_RELOAD_MODULES'] = '1'
 
