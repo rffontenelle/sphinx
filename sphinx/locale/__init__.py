@@ -194,7 +194,7 @@ def get_translation(catalog: str, namespace: str = 'general') -> Callable[[str],
 
         def setup(app):
             package_dir = os.path.abspath(os.path.dirname(__file__))
-            locale_dir = os.path.join(package_dir, 'locales')
+            locale_dir = os.path.join(package_dir, 'locale')
             app.add_message_catalog(MESSAGE_CATALOG_NAME, locale_dir)
 
     With this code, sphinx searches a message catalog from
