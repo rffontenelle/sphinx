@@ -52,7 +52,7 @@ In practice, you have to:
 
       def setup(app):
           package_dir = path.abspath(path.dirname(__file__))
-          locale_dir = os.path.join(package_dir, 'locales')
+          locale_dir = os.path.join(package_dir, 'locale')
           app.add_message_catalog(MESSAGE_CATALOG_NAME, locale_dir)
 
 #. Generate message catalog template ``*.pot`` file, usually in ``locale/``
