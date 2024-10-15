@@ -198,7 +198,7 @@ def get_translation(catalog: str, namespace: str = 'general') -> Callable[[str],
             app.add_message_catalog(MESSAGE_CATALOG_NAME, locale_dir)
 
     With this code, sphinx searches a message catalog from
-    ``${package_dir}/locales/${language}/LC_MESSAGES/myextension.mo``.
+    ``${package_dir}/locale/${language}/LC_MESSAGES/myextension.mo``.
     The :confval:`language` is used for the searching.
 
     .. versionadded:: 1.8
