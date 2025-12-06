@@ -76,6 +76,7 @@ epub_show_urls = 'inline'
 epub_use_index = False
 epub_description = 'Sphinx documentation generator system manual'
 
+latex_engine = 'xelatex'
 latex_documents = [
     (
         'index',
